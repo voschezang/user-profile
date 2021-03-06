@@ -1,0 +1,23 @@
+# set show-mode-in-prompt on
+# set vi-ins-mode-string "(ins)"
+# set vi-cmd-mode-string "(cmd)"
+
+# set vi-cmd-mode-string "\1\e[1;31m\2:\1\e[0m\2"
+
+# editing mode: also affects e.g. python shell
+# set editing-mode vi
+set show-mode-in-prompt on
+# set vi-ins-mode-string \1\e[6 q\2
+# set vi-cmd-mode-string \1\e[2 q\2
+# blinking
+set vi-ins-mode-string \1\e[1 q\2
+set vi-cmd-mode-string \1\e[2 q\2
+
+# optionally:
+# switch to block cursor before executing a command
+set keymap vi-insert
+RETURN: "\e\n"
+
+# default behaviour?
+# "\C-p":history-search-backward
+# "\C-n":history-search-forward
