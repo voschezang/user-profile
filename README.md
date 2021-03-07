@@ -16,8 +16,8 @@ echo '. ~/src/user-profile/.profile' >> .profile
 
 ```
 cd ~
-ln -nfs src/user-config/.inputrc .inputrc
-ln -nfs src/user-config/.vimrc .vimrc
-ln -nfs src/user-config/.bash_profile .bash_profile
-ln -nfs src/user-config/.zshenv .zshenv
+ln -nfs src/user-profile/.inputrc .inputrc
+ln -nfs src/user-profile/.vimrc .vimrc
+ln -nfs src/user-profile/.bash_profile .bash_profile
+ln -nfs src/user-profile/.zshenv .zshenv
 ```
