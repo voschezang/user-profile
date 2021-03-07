@@ -1,5 +1,4 @@
 #!/bin/zsh
-echo "zshenv"
 
 # not compatible with zsh
 
@@ -18,8 +17,8 @@ bindkey -v "^N" history-search-forward
 # bindkey -a "." insert-last-argument
 
 # emacs style
+bindkey "^R" history-incremental-search-backward
 bindkey -v "" beginning-of-line
 bindkey -v "" end-of-line
 
 # C-a,b,e,f,k,u,y etc are setup in .vimrc
-
