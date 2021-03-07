@@ -8,8 +8,8 @@ set -o vi
 # list options with `bind -l`
 
 bind -m vi-command ".":insert-last-argument
-# bind "\C-p":history-search-backward
-# bind "\C-n":history-search-forward
+bind "\C-p":history-search-backward
+bind "\C-n":history-search-forward
 
 # emacs style
 bind -m vi-insert "\C-l":clear-screen
