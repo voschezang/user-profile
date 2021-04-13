@@ -9,6 +9,7 @@ let mapleader = ","
 if system('uname -s') == "Darwin\n"
   set clipboard=unnamed "OSX
   " set mouse=a
+    set expandtab
 else
   set clipboard=unnamedplus "Linux
   set expandtab
@@ -54,8 +55,6 @@ endif
 " normal-mode, non-recurvive, map to ":noh" after Enter
 " nnoremap <C-n> :noh<cr>
 nnoremap <leader>n :noh<cr>
-nnoremap ; :
-" nnoremap : ;
 nnoremap <C-w>d :quit<cr>
 
 " Emacs style
@@ -112,15 +111,15 @@ highlight ExtraTabColor ctermfg=darkgray guifg=darkgray
 2match ExtraTabColor /\t/
 autocmd ColorScheme * highlight ExtraTabColor
 
-if system('uname -s') == "Darwin\n"
-               " highlight ExtraWhitespace ctermbg=black guibg=black ctermfg=gray guifg=gray
-               highlight ExtraWhitespace ctermbg=darkgray guibg=darkgray ctermfg=gray guifg=gray
-               " re: /\s\+$/                      trailing spaces
-               " re: /^\t*\zs \+/             prefix spaces
-               match ExtraWhitespace /^\t*\zs \+\| \s\+$/
-               " match ExtraWhitespace /^\t\| \s\+$/
-               autocmd ColorScheme * highlight ExtraWhitespace
-               " ctermbg=black guibg=black ctermfg=green guifg=green
+if 0 && system('uname -s') == "Darwin\n"
+       " highlight ExtraWhitespace ctermbg=black guibg=black ctermfg=gray guifg=gray
+       highlight ExtraWhitespace ctermbg=darkgray guibg=darkgray ctermfg=gray guifg=gray
+       " re: /\s\+$/                      trailing spaces
+       " re: /^\t*\zs \+/             prefix spaces
+       match ExtraWhitespace /^\t*\zs \+\| \s\+$/
+       " match ExtraWhitespace /^\t\| \s\+$/
+       autocmd ColorScheme * highlight ExtraWhitespace
+       " ctermbg=black guibg=black ctermfg=green guifg=green
 endif
 
 " cursor width
@@ -128,9 +127,9 @@ endif
 
 
 " formatting
-" set tabstop=4
-" set shiftwidth=4
-" set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 "
 " autocmd Filetype python          setlocal tabstop=4 ai
 " autocmd Filetype sh    setlocal tabstop=4 ai
@@ -138,4 +137,5 @@ endif
 " autocmd Filetype yaml              setlocal tabstop=2 ai
 " autocmd Filetype yml setlocal tabstop=2 ai
 " autocmd Filetype shell              setlocal nocolor
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
