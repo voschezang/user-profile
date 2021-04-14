@@ -48,6 +48,7 @@ endif
 " build index
 " command! MakeTags !ctags -R .
 " then use ^[, g^[, ^t  to jump to definitions/declarations
+set tags+=~/tags
 
 
 " UX - custom mappings
