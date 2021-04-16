@@ -35,6 +35,7 @@ alias python=python3
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias ls='ls -Fh --color'
   alias ll='ls -lh --color'
+  alias la='ls -lAh --color'
   # alias 'cd ...'='cd ../..'
 fi
 alias 'cdiff'='git diff --color'

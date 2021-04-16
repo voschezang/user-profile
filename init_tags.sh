@@ -9,9 +9,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 if [ ! -z "$1" ]; then
     root_dir=$1
-    echo "args: $@"
     shift
-    echo "args: $@"
 fi
 echo "'ctags -R $OPTIONS $EXCLUDE -o ~/tags $root_dir $@'"
 ctags -R $OPTIONS $EXCLUDE -o ~/tags $root_dir $@
