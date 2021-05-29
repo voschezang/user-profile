@@ -139,4 +139,5 @@ set softtabstop=4
 " autocmd Filetype yml setlocal tabstop=2 ai
 " autocmd Filetype shell              setlocal nocolor
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+autocmd FileType ansible set tabstop=2 shiftwidth=2 softtabstop=2
 
