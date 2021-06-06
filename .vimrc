@@ -131,6 +131,8 @@ endif
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set shiftround
+
 "
 " autocmd Filetype python          setlocal tabstop=4 ai
 " autocmd Filetype sh    setlocal tabstop=4 ai
