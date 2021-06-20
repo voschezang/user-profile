@@ -20,5 +20,8 @@ bindkey -v "^N" history-search-forward
 bindkey "^R" history-incremental-search-backward
 bindkey -v "" beginning-of-line
 bindkey -v "" end-of-line
+# bindkey -v "≥":yank-last-argument
+bindkey -v '≥' insert-last-word
 
 # C-a,b,e,f,k,u,y etc are setup in .vimrc
+ 
