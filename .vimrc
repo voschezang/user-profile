@@ -1,7 +1,9 @@
 " vim user config 
 
 set nocompatible
-let mapleader = ","
+"let mapleader = ","
+let mapleader = "\\"
+set timeoutlen=300
 
 " set vi-ins-mode-string \1\e[5q \2
 
@@ -114,6 +116,7 @@ nnoremap <C-w>d :quit<cr>
 
 " execute current line with Bash
 noremap <leader>b !!/bin/bash<CR>
+" execute current line with Bash, and add newline
 noremap <leader>B  o<esc>k <bar> !!/bin/bash<CR>
 
 
