@@ -1,7 +1,7 @@
 #!/bin/bash
 # Usage: init_tags [ROOT_DIR] [ctags-args]
 OPTIONS='--extra=+f --python-kinds=-i'
-EXCLUDE='--exclude=.*  --exclude=*/.* --exclude=*/node_modules --exclude=*.jar'
+EXCLUDE='--exclude=@.ctagsignore'
 
 root_dir='.'
 if [[ "$OSTYPE" == "darwin"* ]]; then
