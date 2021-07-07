@@ -1,7 +1,7 @@
 #!/bin/bash
-# Usage: make_tags [ROOT_DIR] [ctags-args]
+# Usage: init_tags [ROOT_DIR] [ctags-args]
 OPTIONS='--extra=+f --python-kinds=-i'
-EXCLUDE='--exclude=*/.git --exclude=*/node_modules --exclude=*.jar'
+EXCLUDE='--exclude=.*  --exclude=*/.* --exclude=*/node_modules --exclude=*.jar'
 
 root_dir='.'
 if [[ "$OSTYPE" == "darwin"* ]]; then
