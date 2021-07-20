@@ -26,10 +26,6 @@ export LESS=FRX
 # Set GPG prompt
 export GPG_TTY=$(tty)
 
-# start ssh-agent daemon (alt: use keychain)
-eval `ssh-agent -s` 
-[[ $(pgrep ssh-add) -eq 0 ]] && ssh-add 2>/dev/null
-
 # aliases
 alias python=python3
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then

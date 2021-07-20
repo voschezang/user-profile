@@ -23,3 +23,18 @@ bind -m vi-insert "\C-e":end-of-line
 set editing-mode vi "\C-r": reverse-search-history
 set editing-mode vi "\C-s": forward-search-history
 set editing-mode vi "\C-o": operate-and-get-next
+
+
+# check if ssh-add has already been called
+if ! ssh-add -l &>/dev/null; then
+    # use .ssh-agent with cache
+    [[ -r ~/.ssh-agent ]] && source .ssh-agent
+
+    if ! ssh-add -l &>/dev/null; then
+        (umask 066; ssh-agent > ~/.ssh-agent)
+        source ~/.ssh-agent
+        # eval `ssh-agent -s`
+        lifetime=$(expr 60 \* 60 \* 24 \* 2 )
+        ssh-add -t "$lifetime" &>/dev/null
+    fi
+fi
