@@ -25,3 +25,5 @@ bindkey -v '≥' insert-last-word
 
 # C-a,b,e,f,k,u,y etc are setup in .vimrc
  
+
+# [[ $(pgrep ssh-add) -eq 0 ]] && ssh-add 2>/dev/null
