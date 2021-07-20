@@ -26,7 +26,6 @@ set editing-mode vi "\C-o": operate-and-get-next
 
 
 # check if ssh-add has already been called
-<<<<<<< HEAD
 if ! ssh-add -l &>/dev/null; then
     # use .ssh-agent with cache
     [[ -r ~/.ssh-agent ]] && source ~/.ssh-agent
@@ -36,6 +35,5 @@ if ! ssh-add -l &>/dev/null; then
         source ~/.ssh-agent
         lifetime=$(expr 60 \* 60 \* 24 \* 2 )
         ssh-add -t "$lifetime" &>/dev/null
-
     fi
 fi
