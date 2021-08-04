@@ -26,6 +26,8 @@ export LESS=FRX
 # Set GPG prompt
 export GPG_TTY=$(tty)
 
+export ANSIBLE_NOCOWS=1
+
 # aliases
 alias python=python3
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then

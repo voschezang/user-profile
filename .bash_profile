@@ -27,7 +27,7 @@ set editing-mode vi "\C-o": operate-and-get-next
 
 # check if ssh-add has already been called
 if ! ssh-add -l &>/dev/null; then
-    # use .ssh-agent with cache
+    # try cached data
     [[ -r ~/.ssh-agent ]] && source ~/.ssh-agent
 
     if ! ssh-add -l &>/dev/null; then
