@@ -66,9 +66,14 @@ aa.*bb|bb.*aa       match aa*bb OR bb*aa
 ## vi/sed
 
 `:%s.prefix_\(suffix\).\1.g`        replace `prefix_suffix` with `suffix`
+
 `:%s.prefix_\(\w*\).new_\1.g`   replace `prefix_***` with `new_***`, where `***` is any word
+
 `def \w*`                       find any python function definition, until `()`
+
 `def.*:`                        find any python function definition, incl. `(..):`
+
 `\<\w*suffix\>`                 find words ending with `suffix`
+
 `\<[a-zA-Z]*suffix`             find terms ending with `suffix`
 
