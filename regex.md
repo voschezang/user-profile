@@ -77,3 +77,4 @@ aa.*bb|bb.*aa       match aa*bb OR bb*aa
 
 `\<[a-zA-Z]*suffix`             find terms ending with `suffix`
 
+`%s/term.*/"&"/g`               find & insert matched text`
