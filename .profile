@@ -36,8 +36,12 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias la='ls -lAh --color'
   # alias 'cd ...'='cd ../..'
 fi
-alias 'cdiff'='git diff --color'
+alias cdiff='git diff --color'
+alias gib='git branch'
+alias gid='git diff'
+alias gis='git status'
 # alias view='vi -R'
 # alias 'gib'='git branch'
 # alias 'gis'='git status'
+alias 'pyut'='python3 -m unittest'
 
