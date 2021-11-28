@@ -43,6 +43,7 @@ alias gid='git diff'
 alias gim='git checkout master'
 alias gimn='git checkout main'
 alias gip='git pull'
+alias gips='git push'
 alias gis='git status'
 
 alias 'pyut'='python3 -m unittest'
