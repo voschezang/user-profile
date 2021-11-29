@@ -65,6 +65,8 @@ aa.*bb|bb.*aa       match aa*bb OR bb*aa
 
 ## vi/sed
 
+### Search & Replace
+
 `:%s.prefix_\(suffix\).\1.g`        replace `prefix_suffix` with `suffix`
 
 `:%s.prefix_\(\w*\).new_\1.g`   replace `prefix_***` with `new_***`, where `***` is any word
@@ -78,3 +80,19 @@ aa.*bb|bb.*aa       match aa*bb OR bb*aa
 `\<[a-zA-Z]*suffix`             find terms ending with `suffix`
 
 `%s/term.*/"&"/g`               find & insert matched text`
+
+`asdfg/dev./s/dev`
+
+`:%s/def\s\(\w*\)/class \u\1/g` find instances of "dev my_func" & replace them with "class My_func"
+
+`:g/def\s\w*/s//`              find & remove instances of "def my_func"
+
+
+### Replace
+
+`:s,\(first\)\(second\),\2\1,g` flip order of terms
+
+`\U\1`                          change to uppercase
+`\L\1`                          change to lowercase
+`\u\1`                          change first char to uppercase
+`\l\1`                          change first char to lowercase

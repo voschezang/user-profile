@@ -30,6 +30,7 @@ export ANSIBLE_NOCOWS=1
 
 # aliases
 alias python=python3
+alias py=python
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias ls='ls -Fh --color'
   alias ll='ls -lh --color'

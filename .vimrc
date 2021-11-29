@@ -119,6 +119,13 @@ noremap <leader>b !!/bin/bash<CR>
 " execute current line with Bash, and add newline
 noremap <leader>B  o<esc>k <bar> !!/bin/bash<CR>
 
+" Unicode
+" :digraph
+" •     C-K oo
+"noremap <leader>o  i<C-K> oo <CR>
+" ◆     C-K Db
+"noremap <leader>D i<C-K> Db <CR>
+
 
 " UX - Emacs style
 inoremap <C-A> <Home>
@@ -133,7 +140,9 @@ inoremap <C-F> <Right>
 " noremap â <C-Left>
 " æ is <Alt-F>
 " inoremap æ <C-Right>
-inoremap <C-K> <Esc>lDa
+
+" C-K conflicts with digraph
+"inoremap <C-K> <Esc>lDa
 inoremap <C-U> <Esc>d0xi
 inoremap <C-Y> <Esc>Pa
 " inoremap <C-X><C-S> <Esc>:w<CR>a
