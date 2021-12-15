@@ -2,8 +2,9 @@
 
 set nocompatible
 "let mapleader = ","
-let mapleader = "\\"
-set timeoutlen=300
+"let mapleader = "\\"
+let mapleader="\<Space>"
+set timeoutlen=400
 
 " set vi-ins-mode-string \1\e[5q \2
 
@@ -117,6 +118,10 @@ if system('uname -s') == "Darwin\n"
 endif
 
 
+" UX - append/newlines
+"setlocal formatoptions=ctnqro
+"setlocal comments+=n:*,n:#
+"setlocal comments+=n:•,n:◆
 
 " UX - custom mappings
 
@@ -145,6 +150,13 @@ noremap <leader>B  o<esc>k <bar> !!/bin/bash<CR>
 "noremap <leader>o  i<C-K> oo <CR>
 " ◆     C-K Db
 "noremap <leader>D i<C-K> Db <CR>
+
+" bullet
+noremap <leader>oo  a• <ESC>
+" diamond
+noremap <leader>od  a◆ <ESC>
+" Euro
+noremap <leader>Eu  a€ <ESC>
 
 
 " UX - Emacs style
