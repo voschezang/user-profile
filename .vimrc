@@ -79,7 +79,7 @@ endif
 set nocompatible
 
 " UX - Margins, Padding
-set scrolloff=2
+set scrolloff=4
 set splitright
 
 " UX - Indentation
@@ -118,11 +118,6 @@ if system('uname -s') == "Darwin\n"
 endif
 
 
-" UX - append/newlines
-"setlocal formatoptions=ctnqro
-"setlocal comments+=n:*,n:#
-"setlocal comments+=n:•,n:◆
-
 " UX - custom mappings
 
 " fix for backspace in OSX + zsh + vi
@@ -157,6 +152,9 @@ noremap <leader>oo  a• <ESC>
 noremap <leader>od  a◆ <ESC>
 " Euro
 noremap <leader>Eu  a€ <ESC>
+" \pm
+noremap <leader>pm  a± <ESC>
+
 
 
 " UX - Emacs style
