@@ -137,7 +137,14 @@ noremap <leader>b !!/bin/bash<CR>
 " execute current line with Bash, and add newline
 noremap <leader>B  o<esc>k <bar> !!/bin/bash<CR>
 
+" copy-paste without updating register
+nnoremap <leader>p "0p
 
+" paste yanked buffer from default register `"0p` and then re-yank last selection `gvy`
+xnoremap <leader>p "0pgvy
+
+" use \c \C to override case-sensitive search
+set smartcase
 
 " Unicode
 " :digraph
