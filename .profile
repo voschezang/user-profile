@@ -47,4 +47,5 @@ alias gip='git pull'
 alias gips='git push'
 alias gis='git status'
 
+alias 'py'='python'
 alias 'pyut'='python3 -m unittest'
