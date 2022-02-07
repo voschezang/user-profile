@@ -21,3 +21,9 @@ ln -nfs src/user-profile/.vimrc .vimrc
 ln -nfs src/user-profile/.bash_profile .bash_profile
 ln -nfs src/user-profile/.zshenv .zshenv
 ```
+
+VS Code
+```sh
+cd "~/Library/Application Support/Code/User"
+ln -ns ~/src/user-profile/vs_code_keybindings.json keybindings.json
+```
