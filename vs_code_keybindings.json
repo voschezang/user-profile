@@ -5,9 +5,10 @@
     { "key": "cmd+3", "command": "workbench.action.openEditorAtIndex3" },
     { "key": "cmd+4", "command": "workbench.action.openEditorAtIndex4" },
     { "key": "cmd+5", "command": "workbench.action.openEditorAtIndex5" },
-    { "key": "cmd+6", "command": "workbench.action.openEditorAtIndex5" },
-    { "key": "cmd+7", "command": "workbench.action.openEditorAtIndex5" },
-    { "key": "cmd+8", "command": "workbench.action.openEditorAtIndex5" },
+    { "key": "cmd+6", "command": "workbench.action.openEditorAtIndexr" },
+    { "key": "cmd+7", "command": "workbench.action.openEditorAtIndex7" },
+    { "key": "cmd+8", "command": "workbench.action.openEditorAtIndex8" },
+    { "key": "cmd+9", "command": "workbench.action.openEditorAtIndex9" },
 
     // switch pane (iterm)
     { "key": "alt+h", "command": "workbench.action.focusLeftGroup" },
