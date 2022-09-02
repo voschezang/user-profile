@@ -35,8 +35,11 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias ls='ls -Fh --color'
   alias ll='ls -lh --color'
   alias la='ls -lAh --color'
-  # alias 'cd ...'='cd ../..'
+  alias '..'='cd ..'
+  alias '...'='cd ../..'
 fi
+alias '....'='cd ../../..'
+
 alias cdiff='git diff --color'
 alias gib='git branch'
 alias gic='git checkout'
