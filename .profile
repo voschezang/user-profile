@@ -49,6 +49,7 @@ alias gimn='git checkout main'
 alias gip='git pull'
 alias gips='git push'
 alias gis='git status'
+alias gcom='git commit -m'
 
 alias 'py'='python'
 alias 'pyut'='python3 -m unittest'
