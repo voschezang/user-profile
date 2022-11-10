@@ -29,8 +29,6 @@ export GPG_TTY=$(tty)
 export ANSIBLE_NOCOWS=1
 
 # aliases
-alias python=python3
-alias py=python
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias ls='ls -Fh --color'
   alias ll='ls -lh --color'
@@ -39,6 +37,12 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   alias '...'='cd ../..'
 fi
 alias '....'='cd ../../..'
+
+alias sslt='openssl x509 -noout -text -in'
+
+alias python=python3
+alias py=python
+alias pyut='python3 -m unittest'
 
 alias cdiff='git diff --color'
 alias gib='git branch'
@@ -49,7 +53,7 @@ alias gimn='git checkout main'
 alias gip='git pull'
 alias gips='git push'
 alias gis='git status'
+alias gad='git add'
 alias gcom='git commit -m'
+alias gcom-='git commit -m-'
 
-alias 'py'='python'
-alias 'pyut'='python3 -m unittest'

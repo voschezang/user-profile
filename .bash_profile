@@ -37,3 +37,6 @@ if ! ssh-add -l &>/dev/null; then
         ssh-add -t "$lifetime" &>/dev/null
     fi
 fi
+
+# if macos; then ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
