@@ -1,6 +1,6 @@
 # Regex
 
-Cheatsheet for regexes. 
+Cheatsheet for regexes. Read more [here](https://www.regular-expressions.info/tutorialcnt.html).
 Technically this file doesn't in this repo but it does relate to [`vi` usage](# vi/sed).
 
 > "the plural of regex is regret"
@@ -22,10 +22,9 @@ Query limits, selection bounds
 ```
 ^   BOL
 $   EOL
-\<  begin of word
-\>  end of word
+\b  word boundary: between \w and \W)
+\B  negative word boundary (^\w)
 ```
-
 
 ## Scopes
 ```
@@ -47,6 +46,7 @@ $   EOL
 ?       match zero or once
 *       match 0 or more times
 +       match 1 or more times
+*?      non-greedy match
 {M,N}   match M to N times, \{ in BRE mode
 {M,}    match at least M times
 {,N}    match up to N times
