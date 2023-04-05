@@ -31,6 +31,7 @@ $   EOL
 ```
 [abc]       match any of abc
 [^abc]      match any of NOT abc
+[a-z]       match any lowercase letter
 ```
 
 ## Select
