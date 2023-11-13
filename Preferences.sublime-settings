@@ -1,0 +1,11 @@
+{
+	"font_size": 16,
+	"ignored_packages": [
+	],
+	"scroll_past_end": true,
+	// "color_scheme": "Mariana.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	// "spell_check": true,
+	"dictionary": "Packages/Language - English/en_US.dic",
+	// "dictionary": "Packages/User/DutchEnglish.dic",
+}
